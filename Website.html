@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RokiTech Business Systems</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #007acc, #4CAF50);
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin: 1rem 0 0;
+        }
+
+        nav {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 0.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: auto;
+            display: none;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        .slider {
+            width: 100%;
+            max-width: 800px;
+            margin: 2rem auto;
+            overflow: hidden;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .slider-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slider-images img {
+            width: 100%;
+            flex-shrink: 0;
+        }
+
+        .slider button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.2rem;
+            z-index: 10;
+        }
+
+        .slider button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .slider button.prev {
+            left: 0;
+        }
+
+        .slider button.next {
+            right: 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>RokiTech Business Systems</h1>
+        <p>Empowering Progress Through Innovations</p>
+    </header>
+
+    <nav>
+        <a data-section="home">Home</a>
+        <a data-section="about">About Us</a>
+        <a data-section="services">Services</a>
+        <a data-section="contact">Contact</a>
+    </nav>
+<section id="home" class="active">
+        <h2>Welcome to RokiTech</h2>
+        <p>Your trusted partner for IT solutions and innovations, tailored to meet your business needs. We deliver efficient and effective solutions for the entire information and communications technology requirements both in software and hardware tailored to the increasingly complex demands of organizations. This enables us to boost productivity of operations and to maximize value for our clients.</p>
+        <h3>Our Mission</h3>
+        <p>To deliver innovative IT solutions that empower businesses, ensuring efficiency and growth through reliable hardware maintenance, system upgrades, and expert consulting.</p>
+        <h3>Our Vision</h3>
+        <p>To become a leading provider of comprehensive IT services, transforming businesses with cutting-edge technology, and fostering long-term success through customer-centric solutions and excellence in execution.</p>
+        <h3>Why Choose Us?</h3>
+        <p>At RokiTech, we combine expertise, reliability, and innovation to deliver top-notch IT services. Our certified technicians provide customized solutions for hardware maintenance, system upgrades, and network management. We are committed to minimizing downtime, enhancing operational efficiency, and supporting your business growth. Our flexible service packages are designed to meet your specific needs, ensuring cost-effective, high-quality IT solutions tailored for long-term success.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+    <p>RokiTech Business Systems is a trusted IT service provider specializing in computer hardware maintenance, system upgrades, preventive maintenance, IT consulting, and network management. We serve small to medium-sized businesses and organizations looking to optimize and future-proof their IT infrastructure. We strive towards technology solutions that provide a real advantage to your organization because we understand that the most powerful connection that a business can make is through its stakeholders. We deliver efficient and effective solutions for the entire information and communications technology requirements both in software and hardware tailored to the increasingly complex demands of organizations. This enables us to boost productivity of operations and to maximize value for our clients.</p>
+        <!-- Image Slider -->
+        <div class="slider">
+            <button class="prev">&#9664;</button>
+            <div class="slider-images">
+                <img src="1.png" alt="Image 1">
+                <img src="2.png" alt="Image 2">
+                <img src="3.png" alt="Image 3">
+                <img src="4.png" alt="Image 4">
+                <img src="5.png" alt="Image 5">
+                <img src="6.png" alt="Image 6">
+                <img src="7.png" alt="Image 7">
+            </div>
+            <button class="next">&#9654;</button>
+        </div>
+    </section>
+<section id="services">
+        <h2>Our Services</h2>
+        <div>
+            <h3>Computer Hardware Maintenance</h3>
+            <ul>
+                <li>Regular Inspections: Routine checks and servicing of computer hardware, ensuring optimal performance and reducing the risk of unexpected downtime.</li>
+                <li>Component Repairs: Expert repair of key hardware components, including power supplies, hard drives, and motherboards, to extend the life of equipment and maintain productivity.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>System Upgrades and Component Replacement</h3>
+            <ul>
+                <li>Hardware Upgrades: Enhancing system performance with memory, storage, and other component upgrades tailored to specific client needs.</li>
+                <li>Component Replacement: Quick and efficient replacement of outdated or failing hardware to improve system reliability.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Preventive Maintenance</h3>
+            <ul>
+                <li>Dust and Debris Cleaning: Scheduled cleaning services to keep internal components free from dust, ensuring proper airflow and reducing the risk of overheating.</li>
+                <li>Cooling System Optimization: Checking and maintaining cooling systems, including fan replacements and thermal paste reapplication, for better heat management.</li>
+                <li>Regular Diagnostics: Proactive testing to detect potential issues early and keep systems running smoothly.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Servicing and Optimization</h3>
+            <ul>
+                <li>Operating System Updates and Patching: Ensuring all devices have the latest OS patches for security and functionality.</li>
+                <li>Driver Updates: Installing up-to-date drivers for optimal compatibility and performance.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>ICT Consulting</h3>
+            <ul>
+                <li>Strategic IT Planning: Advising on IT strategies aligned with business objectives to maximize ROI and support growth.</li>
+                <li>Infrastructure Assessment: Evaluating existing setups to recommend upgrades, security enhancements, and cost-effective solutions.</li>
+                <li>Training & Support: Educating teams on best practices for hardware and software use, boosting productivity and minimizing issues.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Networking and Network Management</h3>
+            <ul>
+                <li>Network Setup and Configuration: Designing and implementing secure, efficient networks for seamless connectivity.</li>
+                <li>Network Maintenance: Regular monitoring and maintenance of network health to prevent interruptions and ensure optimal performance.</li>
+                <li>Firewall and Security Management: Protecting networks from unauthorized access and potential threats with robust security measures.</li>
+            </ul>
+        </div>
+        <div>
+            <h3>Supply of IT Equipment</h3>
+            <ul>
+                <li>Hardware and Software Procurement: Providing high-quality IT equipment from trusted brands, including computers, servers, peripherals, and software.</li>
+                <li>End-to-End Solutions: Offering tailored equipment packages for various budgets and organizational needs, with delivery and installation services included.</li>
+            </ul>
+        </div>
+    </section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+        <!-- Left side: Mobile numbers -->
+        <div>
+            <p>Phone: +254711239900 | +254711236316</p>
+            <p>Email: rokitechbusinesssystems@gmail.com</p>
+        </div>
+        <!-- Right side: Availability -->
+        <div>
+            <p><strong>Availability:</strong></p>
+            <p>Office Hours: 08:00am - 6:00pm</p>
+            <p>Saturdays: 09:00am - 12:00pm</p>
+            <p>We only close on Sundays and Public Holidays</p>
+        </div>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div style="text-align: center; margin: 2rem 0;">
+        <a href="https://wa.me/254711239900?text=Hello%20RokiTech,%20I%20would%20like%20to%20request%20for%20your%20service." 
+           target="_blank" 
+           style="display: inline-flex; align-items: center; text-decoration: none; background-color: #25D366; color: white; padding: 10px 20px; border-radius: 5px; font-size: 1.2rem; font-weight: bold;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" style="width: 30px; height: 30px; margin-right: 10px;">
+            Chat with us on WhatsApp
+        </a>
+    </div>
+</section>
+
+    <footer>
+        <p>&copy;Copyright 2024 RokiTech Business Systems. All Rights Reserved.</p>
+    </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function () {
+                const targetSection = this.getAttribute('data-section');
+                document.querySelectorAll('section').forEach(section => {
+                    section.classList.remove('active');
+                });
+                document.getElementById(targetSection).classList.add('active');
+            });
+        });
+        // Slider Logic
+        const sliderImages = document.querySelector('.slider-images');
+        const totalImages = sliderImages.children.length;
+        let currentIndex = 0;
+
+        function updateSlider() {
+            sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            updateSlider();
+        });
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateSlider();
+        });
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % totalImages;
+            updateSlider();
+        }, 3000);
+    </script>
+</body>
+
+</html>
